@@ -6,6 +6,8 @@
 :root{
     --title: #e73c6f;
     --text: #ffffff; 
+    --email: #00a9ff;
+    --bgcolor: #000000;
 }
 .clearfix::after{
     content: "";
@@ -30,30 +32,38 @@ header.container{
 main.container{
     margin-top: 3rem;
 }
-.container p{
+#titolo{
     text-align: center;
     font-size: 1.1rem;
-    margi
+    padding: 1rem;
 }
 .box{
-    width: calc((100% / 3) - 2rem);
+    width: calc(100% / 3);
     float: left;
-    background-color: #e73c6f;
-    margin: 1.6rem 1rem;
+    padding: 1.7rem 1rem;
 }
 .picture{
-    background-color: aqua;
+    background-color: var(--bgcolor);
     width: 30% ;
     height: 100px;
     float: left;
     
 } 
 .picture img{
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 .description{
     width: 70%;
     height: 100px;
-    background-color: blue;
+    background-color: var(--bgcolor);
     float: left;
+    padding: 0.5rem 0.3rem;
+    line-height: 27px;
+}
+.white{
+    color: var(--text);
+}
+.blue{
+    color: var(--email);
 }
